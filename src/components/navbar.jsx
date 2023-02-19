@@ -10,6 +10,7 @@ import {
 import Home from '../pages/home';
 import Contact from '../pages/contact';
 import About from '../pages/about';
+import Courses from '../pages/courses';
 import { Component } from 'react';
 
 export default class NavbarComp extends Component {
@@ -29,6 +30,7 @@ export default class NavbarComp extends Component {
                             >
                                 <Nav.Link as={Link} to="/home">Home</Nav.Link>
                                 <Nav.Link as={Link} to="/about">About</Nav.Link>
+                                <Nav.Link as={Link} to="/courses">Courses</Nav.Link>
                                 <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
 
                             </Nav>
@@ -41,7 +43,7 @@ export default class NavbarComp extends Component {
                         <Route element={<About></About>} path="/about" />
                         <Route element={<Home></Home>} path="/home" />
                         <Route element={<Contact></Contact>} path="/contact" /> 
-                            
+                        <Route element={<Courses></Courses>} path="/courses" />   
                         {/* </Route>
                         <Route path="/contact">
                             <Contact />
