@@ -1,1 +1,108 @@
+.bannerAbout {
+  background-color: #0e1f51;
+  height: 288px;
+  display: flex;
+  flex-direction: column;
+}
 
+.titleAbout {
+  color: #ff3e54;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.subtitleAbout {
+  color: #ffffff;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.middle {
+  display: flex;
+  flex-direction: row;
+  margin: 50px;
+  background-color: #f7f7f7;
+}
+
+.AboutUs {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 20px;
+  color: #ff3e54;
+  margin-bottom: 15px;
+}
+
+.textTitle {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  color: #0e1f51;
+}
+.text {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+  color: #000000;
+}
+
+.helpIcon {
+  background: #f7f7f7;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+.team {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 20px;
+  /* identical to box height, or 83% */
+
+  text-align: center;
+
+  /* Peach Red */
+
+  color: #ff3e54;
+}
+
+.Ourleaders {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  /* identical to box height, or 100% */
+
+  text-align: center;
+
+  /* Dark Blue */
+
+  color: #0e1f51;
+}
+.leaders {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.leader {
+  width: 20%;
+  margin: 10px;
+}

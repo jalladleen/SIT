@@ -1,9 +1,11 @@
-.banner {
+.bannerCourses {
     background-color: #0E1F51;
     height: 288px;
+    display: flex;
+    flex-direction: column;
 }
 
-.title {
+.titleCourses {
     color: #FF3E54;
     font-family: 'Raleway';
     font-style: normal;
@@ -11,9 +13,10 @@
     font-size: 48px;
     line-height: 58px;
     text-align: center;
+    margin-top: 80px;
 }
 
-.subtitle {
+.subtitleCourses {
     color: #FFFFFF;
     font-family: 'Raleway';
     font-style: normal;
@@ -24,6 +27,77 @@
 }
 
 .cards {
-    flex:auto;
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.item {
+    width: 30%;
+    background-color: #F7F7F7;
+    margin: 20px;
+}
+
+.route {
+    color: #FF3E54;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 20px;
+    /* identical to box height, or 83% */
+
+    text-align: center;
+    margin-top: 50px;
+}
+
+.learn {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    /* identical to box height, or 100% */
+
+    text-align: center;
+    margin-top: 10px;
+}
+
+.getInTouch {
+    position: relative;
+    text-align: center;
+    margin: 40px;
+}
+
+.text-on-image {
+    position: absolute;
+    width: 671px;
+    height: 100px;
+    left: 29%;
+    top: 30%;
+    display:block;
+}
+
+.quote {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 50px;
+    /* or 156% */
+
+    text-align: center;
+
+    color: #42FE00;
+}
+
+.button {
+    width: 130px;
+    height: 44px;
+    background-color:#FF3E54;
+    color: white;
+    text-align: center;
+    border-radius: 12px;
 }
