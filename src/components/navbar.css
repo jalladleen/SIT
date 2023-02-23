@@ -2,17 +2,20 @@
     background-color: #FF3E54;
     color: white;
     /* border-radius: 25px; */
+    font-weight: bold;
 }
 
 .nxxv {
     background-color: #FF3E54;
     /* border-radius: 25px; */
     padding: 8px 15px;
+    font-weight: bold;
 }
 
 .nav-link:hover {
     background-color: #FF3E54;
     color: white;
+    font-weight: bold;
     /* border-radius: 25px; */
 }
 
@@ -32,7 +35,7 @@
 }
 
 .sit-text {
-    font-size: 20px;
+    font-size: 40px;
     font-weight: bold;
     display: inline-block;
     vertical-align: middle;

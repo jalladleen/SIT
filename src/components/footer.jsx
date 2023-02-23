@@ -77,7 +77,7 @@ const Footer = () => {
 							style={{ marginRight: '10px', marginBottom: '10px' }}
                           />
                         </div>
-						<button type="submit" class="btn btn-primary subscribe-btn" style={{ background: '#FF3E54', borderBlockColor:'#FF3E54'  }}>
+						<button type="submit" class="btn btn-primary subscribe-btn" style={{ background: '#FF3E54', borderBlockColor:'#FF3E54', textAlign: 'right'  }}>
 							Subscribe
 							</button>
                       </form>

@@ -30,24 +30,18 @@ export default class NavbarComp extends Component {
               <span className="sit-text">Senior in I.T.</span>
             </Navbar.Brand>
           </Container>
-                        <Navbar.Toggle aria-controls="navbarScroll" />
-                        <Navbar.Collapse  id="navbarScroll">
-                        <Nav
-                        className="mr-auto my-2 my-lg-0"
-                        style={{ maxHeight: '100px', marginRight: '100px' }}
-                        navbarScroll>
-
-                                <Nav.Link  as={Link} to="/home">Home</Nav.Link>
-                                <Nav.Link as={Link} to="/about">About</Nav.Link>
-                                <Nav.Link as={Link} to="/courses">courses</Nav.Link>
-                                <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
-                                <Nav.Link as={Link} to="/publicEvents">publicEvents</Nav.Link>
-                                <Nav.Link as={Link} to="/register" class ="nxxv">register</Nav.Link>
-
-                            </Nav>
-
-                        </Navbar.Collapse>
-                    </Navbar>
+            <Navbar.Toggle aria-controls="navbarScroll" />
+                <Navbar.Collapse  id="navbarScroll">
+                <Nav className="mr-auto my-2 my-lg-0" style={{ maxHeight: '100px', marginRight: '100px' }} navbarScroll>
+                <Nav.Link as={Link} to="/home" style={{fontWeight: 'bold', color: '#4C4E52', fontSize: '20px'}}>Home</Nav.Link>
+                <Nav.Link as={Link} to="/about" style={{fontWeight: 'bold', color: '#4C4E52', fontSize: '20px'}}>About</Nav.Link>
+                <Nav.Link as={Link} to="/courses" style={{fontWeight: 'bold', color: '#4C4E52', fontSize: '20px'}}>Courses</Nav.Link>
+                <Nav.Link as={Link} to="/contact" style={{fontWeight: 'bold', color: '#4C4E52', fontSize: '20px'}}>Contact</Nav.Link>
+                <Nav.Link as={Link} to="/publicEvents" style={{fontWeight: 'bold', color: '#4C4E52', fontSize: '20px'}}>PublicEvents</Nav.Link>
+                <Nav.Link as={Link} to="/register" class ="nxxv" style={{fontWeight: 'bold', color: '#4C4E52', fontSize: '20px'}}>Register</Nav.Link>
+            </Nav>
+            </Navbar.Collapse>
+        </Navbar>
 
                 <div >
                     <Routes>

@@ -1,9 +1,13 @@
 import React from "react";
 const home = () => {
 return (
-	<div>
-	<h1>home Page</h1>
-	</div>
+
+<div>
+  <br /><br />
+  <center><h1>home Page</h1></center>
+  <br /><br />
+</div>
+
 );
 };
 
