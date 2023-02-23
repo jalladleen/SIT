@@ -44,6 +44,7 @@ export default class NavbarComp extends Component {
 
                                 <Nav.Link  as={Link} to="/home">Home</Nav.Link>
                                 <Nav.Link as={Link} to="/about">About</Nav.Link>
+                                <Nav.Link as={Link} to="/courses">Courses</Nav.Link>
                                 <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
                                 <Nav.Link as={Link} to="/publicEvents">publicEvents</Nav.Link>
                                 <Nav.Link as={Link} to="/register" class ="nxxv">register</Nav.Link>

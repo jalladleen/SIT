@@ -1,4 +1,3 @@
-
 import React from "react";
 import "./courses.css";
 import webDesign from "../components/images/webDesign.svg";
