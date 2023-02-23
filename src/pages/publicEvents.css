@@ -1,1 +1,147 @@
-
+.slider-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+​
+.slider-bar {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    /* added box-sizing property */
+    margin-bottom: 50px;
+}
+​
+.slider-button {
+    padding: 8px 16px;
+    margin: 0 6px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: transparent;
+    border: 2px solid #333;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+​
+.slider-button:hover,
+.slider-button.active {
+    color: #fff;
+    background-color: #333;
+}
+​
+.slider {
+    position: relative;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+​
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #333;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+}
+​
+.slide.active {
+    opacity: 1;
+    visibility: visible;
+}
+​
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 48px;
+    color: #333;
+    cursor: pointer;
+    z-index: 10;
+    opacity: 0.5;
+    transition: all 0.2s ease;
+}
+​
+.prev-button:hover,
+.next-button:hover {
+    color: #fff;
+    opacity: 1;
+}
+​
+.prev-button {
+    left: 20px;
+}
+​
+.next-button {
+    right: 20px;
+}
+​
+​
+/* get involved section */
+​
+.box {
+    margin: auto;
+    width: 945px;
+    height: 295px;
+    border: 3px#3B008D;
+    background-color: #3B008D;
+    background-image: url("public Events.png");
+    padding: 10px;
+    border-radius: 10px;
+}
+​
+.work {
+    margin: auto;
+    border: 1px black;
+    height: 1000px;
+    padding: 10px;
+    align-items: center;
+}
+​
+.txt {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+​
+.header {
+    margin: auto;
+    width: 100%;
+    height: 288px;
+    border: 3px black;
+    background-color: #0E1F51;
+    padding: 10px;
+}
+​
+#phead {
+    text-align: center;
+    color: "#ff3e54";
+}
+​
+button {
+    margin-right: 20px;
+    border-radius: 7px;
+}

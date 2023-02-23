@@ -1,7 +1,12 @@
-.nav-link:hover{
-background-color: red;
-color: white;
+.nav-link:hover {
+    background-color: red;
+    color: white;
+    border-collapse: separate;
+    border-radius: 25px;
 }
-.nxxv{
-	background-color: red;
+
+.nxxv {
+    background-color: red;
+    /* border-collapse: separate;
+    border-radius: 15px; */
 }

@@ -25,7 +25,7 @@ export default class NavbarComp extends Component {
                     <Container>
           <Navbar.Brand href="#home">
             <img
-              src="./images/sitLogo.jpg"
+              src={require('./images/sitLogo.jpg')} 
               width="30"
               height="30"
               alt="React Bootstrap logo"
