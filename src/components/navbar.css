@@ -1,12 +1,39 @@
 .nav-link:hover {
-    background-color: red;
+    background-color: #FF3E54;
     color: white;
-    border-collapse: separate;
-    border-radius: 25px;
+    /* border-radius: 25px; */
 }
 
 .nxxv {
-    background-color: red;
-    /* border-collapse: separate;
-    border-radius: 15px; */
+    background-color: #FF3E54;
+    /* border-radius: 25px; */
+    padding: 8px 15px;
+}
+
+.nav-link:hover {
+    background-color: #FF3E54;
+    color: white;
+    /* border-radius: 25px; */
+}
+
+.nav-link:hover {
+    background-color: #FF3E54;
+    color: white;
+    border-collapse: separate;
+    /* border-radius: 25px; */
+    padding: 5px 15px;
+    /* add padding to make the hover effect rectangular */
+}
+
+.sit-logo {
+    width: 80px;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+.sit-text {
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
 }

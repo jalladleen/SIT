@@ -1,15 +1,10 @@
 import React from "react";
-import { Outlet, Link } from "react-router-dom";
 const home = () => {
-  return (  
-    <div>
-      
-    home
-      
-
-     
-    </div>
-  )
+return (
+	<div>
+	<h1>home Page</h1>
+	</div>
+);
 };
 
 export default home;

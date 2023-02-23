@@ -3,7 +3,6 @@ import { createRoot } from "react-dom/client";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 root.render(
@@ -11,4 +10,5 @@ root.render(
     <App />
   </React.StrictMode>
 );
-reportWebVitals();
+
+reportWebVitals(console.log); // or pass an empty function like: reportWebVitals(() => {});
