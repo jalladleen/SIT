@@ -6,28 +6,18 @@ import {
   faTwitter,
   faInstagram,
 } from '@fortawesome/free-brands-svg-icons';
-import axios from 'axios';
 
 const Footer = () => {
   const [email, setEmail] = useState('');
   const [subscribed, setSubscribed] = useState(false);
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
-
+    // Placeholder for email subscription logic
     console.log(`Subscribed email: ${email}`);
-
-    try {
-      await axios.post('/api/subscribe', {
-        email,
-      });
-      setSubscribed(true);
-    } catch (error) {
-      console.error('Error submitting form:', error);
-    }
+    setSubscribed(true);
   };
 
-const Footer =()=> {
   return (
     <div class="container">
       <div class="row">
@@ -38,7 +28,7 @@ const Footer =()=> {
                 <div class="col-sm">
                   <div class="footer-title m-t-5 m-b-30 p-b-8">About us</div>
                   <p class="white-text">
-                    It is a long established fact that a reader will be distracted by the readable content of a page when
+                    it is a long established fact that a reader will be distracted by the readable content of a page when
                     look at
                   </p>
                   <div class="footer-social-links m-t-30">
@@ -87,14 +77,12 @@ const Footer =()=> {
 							style={{ marginRight: '10px', marginBottom: '10px' }}
                           />
                         </div>
-						<button type="submit" class="btn btn-primary subscribe-btn" style={{ background: '#FF3E54', borderBlockColor:'#FF3E54', textAlign: 'right'  }}>
+						<button type="submit" class="btn btn-primary subscribe-btn" style={{ background: '#FF3E54', borderBlockColor:'#FF3E54', alignContent: 'right'  }}>
 							Subscribe
 							</button>
                       </form>
                     )}
                   </div>
-               
-
                 </div>
               </div>
             </div>
@@ -104,5 +92,6 @@ const Footer =()=> {
       </div>
     </div>
   );
-}}
+};
+
 export default Footer;

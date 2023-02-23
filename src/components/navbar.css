@@ -1,0 +1,80 @@
+.footer {
+    padding: 60px 0;
+    width: 100%;
+    background: #0E1F51;
+    color: #fff;
+}
+
+.footer-title {
+    position: relative;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.footer-title:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    width: 30px;
+    height: 4px;
+    background: #ff304d;
+}
+
+.footer-links a {
+    padding: 10px 0;
+    color: #fff;
+    display: block;
+    transition: color 0.5s ease-in-out;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #ff304d;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.footer-social-links a {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    float: left;
+    margin-right: 10px;
+    padding: 5px;
+    text-align: center;
+    color: #dd0e84;
+    line-height: 2;
+    border-width: 2px;
+    background: #efefef;
+}
+
+.footer-social-links a:hover {
+    background-color: #dd0e84;
+    color: #fff;
+}
+
+
+/* g. Footer bottom section */
+
+.footer-bottom {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    color: #fff;
+    background: #FF3E54
+}
+
+.social {
+    border-radius: 50%;
+}
+
+.container {
+    max-width: 100%;
+}
+
+.subscribe-btn {
+    float: right;
+}
