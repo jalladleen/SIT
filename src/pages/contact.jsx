@@ -1,12 +1,60 @@
-import React from "react";
-const contact = () => {
-return (
-	<div>
-		<br /><br />
-	<center><h1>Contact Us Page</h1></center>
-	<br /><br />
-	</div>
-);
-};
+import React, { useRef, useState } from 'react';
+import emailjs from 'emailjs-com';
+import "./contact.css";
+ 
+const Contact = () => {
+ const form = useRef();
+ const [isMessageVisible, setIsMessageVisible] = useState(false);
+ 
+ const sendEmail = (e) => {
+	e.preventDefault(); // prevents the page from reloading when you hit “Send”
+  
+	const { user_name, user_email, message } = form.current.elements;
+	const templateParams = {
+	  "from_name": user_name.value,
+	  "subject": "New Message from " + user_name.value,
+	  "message_html": message.value,
+	  "reply_to": user_email.value // use user_email instead of your email
+	};
+  
+	emailjs.sendForm('service_kkjoutp', 'template_umqkdbm', form.current, 'Z0ou9ZVexnkDtSzNj')
+	  .then(() => {
+		  setIsMessageVisible(true);
+		  form.current.reset();
+	  }, () => {
+		  // show the user an error
+	  });
+  };
+  
+ 
+ return (
+   <div className="form-container">
+     {isMessageVisible ?
+       <div className="success-message">
+         <p>Message sent!</p>
+         <button onClick={() => setIsMessageVisible(false)}>Close</button>
+       </div> :
+       null
+     }
+     <form ref={form} onSubmit={sendEmail}>
+       <label>Name *</label>
+       <input type="text" name="user_name" required />
 
-export default contact;
+       <label>Email *</label>
+	   <input type="text" name="user_email" required />
+
+	   <label>Phone *</label>
+	   <input type="tel" name="user_phone" required />
+
+       <label>Subject *</label>
+       <input type="text" name="user_subject" required />
+       
+	   <label>Message *</label>
+       <textarea name="message" required />
+       <input type="submit" value="Send" />
+     </form>
+   </div>
+ );
+};
+ 
+export default Contact;
