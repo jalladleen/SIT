@@ -12,7 +12,7 @@ function App() {
         <div>
           <NavbarComp />
           <Routes>
-            <Route path="/subscribe" element={<Subscribe />} /> // add a new route for the Subscribe component
+            <Route path="/subscribe" element={<Subscribe />} /> 
           </Routes>
           <Footer />
         </div>
