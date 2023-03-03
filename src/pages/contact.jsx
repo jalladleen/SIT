@@ -10,14 +10,14 @@ const Contact = () => {
 	e.preventDefault(); // prevents the page from reloading when you hit “Send”
   
 	const { user_name, user_email, message } = form.current.elements;
-	const templateParams = {
-	  "from_name": user_name.value,
-	  "subject": "New Message from " + user_name.value,
-	  "message_html": message.value,
-	  "reply_to": user_email.value // use user_email instead of your email
-	};
+	// const templateParams = {
+	//   "from_name": user_name.value,
+	//   "subject": "New Message from " + user_name.value,
+	//   "message_html": message.value,
+	//   "reply_to": user_email.value // use user_email instead of your email
+	// };
   
-	emailjs.sendForm('service_kkjoutp', 'template_umqkdbm', form.current, 'Z0ou9ZVexnkDtSzNj')
+	emailjs.sendForm('service_kkjoutp', 'template_umqkdbm', form.current, 'glmdBWlmeEKsfodH4')
 	  .then(() => {
 		  setIsMessageVisible(true);
 		  form.current.reset();
@@ -37,11 +37,14 @@ const Contact = () => {
        null
      }
      <form ref={form} onSubmit={sendEmail}>
-       <label>Name *</label>
-       <input type="text" name="user_name" required />
+       <label>First Name *</label>
+       <input type="text" name="user_fname" required />
+
+	   <label>Last Name *</label>
+       <input type="text" name="user_lname" required />
 
        <label>Email *</label>
-	   <input type="text" name="user_email" required />
+	   <input type="email" name="user_email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
 
 	   <label>Phone *</label>
 	   <input type="tel" name="user_phone" required />

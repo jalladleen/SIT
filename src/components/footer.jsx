@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 import {
   faFacebook,
   faTwitter,
@@ -16,6 +17,7 @@ const Footer = () => {
     // Placeholder for email subscription logic
     console.log(`Subscribed email: ${email}`);
     setSubscribed(true);
+    window.location.href = '../pages/subscribe'; // Direct to subscribe page
   };
 
   return (
@@ -60,13 +62,13 @@ const Footer = () => {
                 <div class="col-sm">
                   <div class="footer-title m-t-5 m-b-20 p-b-8">Subscribe Us</div>
                   <div class="footer-links">
-                    <a href="#">it is a long established fact that a reader will be distracted by the readable</a>
+                    <p href="#">it is a long established fact that a reader will be distracted by the readable</p>
                     {subscribed ? (
                       <p>Thank you for subscribing!</p>
                     ) : (
                       <form onSubmit={handleSubmit}>
                         <div class="form-group">
-                          <input
+                          {/* <input
                             type="email"
                             class="form-control"
                             id="email-input"
@@ -75,13 +77,17 @@ const Footer = () => {
                             onChange={(e) => setEmail(e.target.value)}
                             required
 							style={{ marginRight: '10px', marginBottom: '10px' }}
-                          />
+                          /> */}
                         </div>
-						<button type="submit" class="btn btn-primary subscribe-btn" style={{ background: '#FF3E54', borderBlockColor:'#FF3E54', textAlign: 'right'  }}>
-							Subscribe
-							</button>
+						{/* <button onClick={handleSubmit} type="submit" class="btn btn-primary subscribe-btn" style={{ background: '#FF3E54', borderBlockColor:'#FF3E54', textAlign: 'right'  }}> */}
+            <Link to="/subscribe">
+              <button class="btn btn-primary subscribe-btn" style={{ background: '#FF3E54', borderBlockColor:'#FF3E54', textAlign: 'right' }}>Subscribe</button></Link>
+							{/* Subscribe
+							</button> */}
                       </form>
                     )}
+
+
                   </div>
                 </div>
               </div>
