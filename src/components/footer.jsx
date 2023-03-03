@@ -9,7 +9,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
-  const [email, setEmail] = useState('');
+  const [email] = useState('');
   const [subscribed, setSubscribed] = useState(false);
 
   const handleSubmit = (event) => {
