@@ -10,15 +10,22 @@ const publicEvents = () => {
 
   return (  
     <div>
-        <div class = "header">
+        <div class = "header" >
+          <br></br>
+          <br></br>
+          <br></br>
+
            <h4 id = "phead" style ={{color:"#FF3E54"}}>Public Events</h4>
-                
+            <h6 style ={{color: "#FFFFFF",textAlign: "center"}} >Home/Public Events</h6>
         </div>
 
 
         <div class = "work">
-            <h4 style={{color: "#0E1F51", textAlign:"center"}} > Our Work </h4>
-            
+          
+            <h6 style ={{color:"#FF3E54",textAlign: "center"}} >\Public Events\</h6>
+            <strong>
+            <h4 style={{color: "#0E1F51", textAlign:"center", font: "Raleway"}} > Our Work </h4>
+            </strong>
             <div class="displayWork">
                 
             </div>
@@ -30,6 +37,7 @@ const publicEvents = () => {
         <br></br>
         <br></br>
         <div class = "txt">
+            
         <br></br>
             <h3 style={{   color: "white", textAlign:"center" }} >Want to get Involved?</h3>
             <div style={{textAlign: "center"}}>
