@@ -28,6 +28,7 @@ const Contact = () => {
   
  
  return (
+  <div className = "all-containers">
    <div className="form-container">
      {isMessageVisible ?
        <div className="success-message">
@@ -56,6 +57,28 @@ const Contact = () => {
        <textarea name="message" required />
        <input type="submit" value="Send" />
      </form>
+   </div>
+   <div className = "info">
+    <div>
+     <h3>send Email</h3>
+     <h6>enter email here</h6>
+     <br></br>
+     <br></br>
+     <br></br>
+     <br></br>
+     <h3>Follow us</h3>
+
+     <div className = "socials">
+     <button  style={{   color: "white" , backgroundColor: "#ff304d" }} type="submit"></button>
+     <button  style={{   color: "white" , backgroundColor: "#ff304d" }} type="submit"></button>
+     <button  style={{   color: "white" , backgroundColor: "#ff304d" }} type="submit"></button>
+
+
+     </div>
+
+    </div>
+
+   </div>
    </div>
  );
 };

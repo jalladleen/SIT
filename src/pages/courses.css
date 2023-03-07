@@ -48,7 +48,6 @@
     font-size: 24px;
     line-height: 20px;
     /* identical to box height, or 83% */
-
     text-align: center;
     margin-top: 50px;
 }
@@ -60,7 +59,6 @@
     font-size: 40px;
     line-height: 40px;
     /* identical to box height, or 100% */
-
     text-align: center;
     margin-top: 10px;
 }
@@ -77,7 +75,7 @@
     height: 100px;
     left: 29%;
     top: 30%;
-    display:block;
+    display: block;
 }
 
 .quote {
@@ -87,16 +85,14 @@
     font-size: 32px;
     line-height: 50px;
     /* or 156% */
-
     text-align: center;
-
     color: #42FE00;
 }
 
 .button {
     width: 130px;
     height: 44px;
-    background-color:#FF3E54;
+    background-color: #FF3E54;
     color: white;
     text-align: center;
     border-radius: 12px;

@@ -8,48 +8,53 @@ const ButtonGroup = () => {
         window.location = "/contact";
     }
 
-	return (  
-    <div>
-        <div class = "header">
-           <h4 id = "phead" style ={{color:"#FF3E54"}}>Public Events</h4>
-                
-        </div>
-
-        <div class = "work">
-            <h4 style={{color: "#0E1F51", textAlign:"center"}} > Our Work </h4>
+    return (  
+      <div>
+      <div className="bannerpublicE">
+        <h1 className="titlepublicE">Public Events</h1>
+        <h2 className="subtitlepublicE">Home / Public Events</h2>
+      </div>
+  
+  
+          <div class = "work">
             
-            <div class="displayWork">
-            <Slider />
-            </div>
-        </div>
-      
-   <div class="box">
-
-        <br></br>
-        <br></br>
-        <br></br>
-        <div class = "txt">
-        <br></br>
-            <h3 style={{   color: "white", textAlign:"center" }} >Want to get Involved?</h3>
-            <div style={{textAlign: "center"}}>
-                <button onClick={handleSubmit} style={{   color: "white" , backgroundColor: "#ff304d" }} type="submit">Volunteer</button>
-                <button onClick={handleSubmit} style={{   color: "white" , backgroundColor: "#ff304d"  }} type="submit">Partner</button>
-            </div>
-        </div>
-   </div>
-   
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-
-      <br></br>
+              <b><h6 style ={{color:"#FF3E54",textAlign: "center", paddingTop:"40px", fontWeight: 'bold'}} >\Public Events\</h6></b>
+              <strong>
+              <h4 style={{color: "#0E1F51", textAlign:"center", font: "Raleway"}} > Our Work </h4>
+              </strong>
+              <div class="displayWork">
+              <Slider />  
+              </div>
+          </div>
+        
+     <div class="box">
+  
+          <br></br>
+          <br></br>
+          <br></br>
+          <div class = "txt">
+              
+          <br></br>
+              <h3 style={{   color: "white", textAlign:"center" }} >Want to get Involved?</h3>
+              <div style={{textAlign: "center"}}>
+                  <button onClick={handleSubmit} style={{   color: "white" , backgroundColor: "#ff304d" }} type="submit">Volunteer</button>
+                  <button onClick={handleSubmit} style={{   color: "white" , backgroundColor: "#ff304d"  }} type="submit">Partner</button>
+              </div>
+          </div>
+     </div>
      
-    </div>
-  )
-    
- 
-};
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+  
+        <br></br>
+       
+      </div>
+    )
+      
+   
+  };
 
 // export default publicEvents;
 

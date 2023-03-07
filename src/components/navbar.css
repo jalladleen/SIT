@@ -1,29 +1,29 @@
 .nav-link:hover {
-    background-color: #FF3E54;
+    background-color: #f1475a;
     color: white;
-    /* border-radius: 25px; */
+    border-radius: 15px;
     font-weight: bold;
 }
 
 .nxxv {
-    background-color: #FF3E54;
-    /* border-radius: 25px; */
+    background-color: #f1475a;
+    border-radius: 15px;
     padding: 8px 15px;
     font-weight: bold;
 }
 
 .nav-link:hover {
-    background-color: #FF3E54;
+    background-color: #f1475a;
     color: white;
     font-weight: bold;
-    /* border-radius: 25px; */
+    border-radius: 15px;
 }
 
 .nav-link:hover {
-    background-color: #FF3E54;
+    background-color: #f1475a;
     color: white;
     border-collapse: separate;
-    /* border-radius: 25px; */
+    border-radius: 15px;
     padding: 5px 15px;
     /* add padding to make the hover effect rectangular */
 }
