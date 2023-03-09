@@ -50,19 +50,19 @@ const Footer = () => {
                 <div class="col-sm">
                   <div class="footer-title m-t-5 m-b-30 p-b-8">Course</div>
                   <div class="footer-links">
-                    <a href="#">Web Design/Development</a>
-                    <a href="#">App Development</a>
-                    <a href="#">UI/UX Design</a>
-                    <a href="#">HubSpot Integration</a>
-                    <a href="#">Email Marketing</a>
-                    <a href="#">Website Migration</a>
+                    <p>Web Design/Development</p>
+                    <p>App Development</p>
+                    <p href="#">UI/UX Design</p>
+                    <p href="#">HubSpot Integration</p>
+                    <p href="#">Email Marketing</p>
+                    <p href="#">Website Migration</p>
                   </div>
                 </div>
 
                 <div class="col-sm">
                   <div class="footer-title m-t-5 m-b-20 p-b-8">Subscribe Us</div>
                   <div class="footer-links">
-                    <p href="#">it is a long established fact that a reader will be distracted by the readable</p>
+                    <p href="#">It is a long established fact that a reader will be distracted by the readable</p>
                     {subscribed ? (
                       <p>Thank you for subscribing!</p>
                     ) : (

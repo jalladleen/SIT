@@ -18,7 +18,6 @@ const ButtonGroup = () => {
   
           <div class = "work">
               <b><h6 style ={{color:"#FF3E54",textAlign: "center", paddingTop:"40px", fontWeight: 'bold', 
-                  fontWeight: "700",
                   fontSize: "24px",
                   lineHeight: "20px"
             
@@ -29,7 +28,6 @@ const ButtonGroup = () => {
                   fontSize: "40px",
                   lineHeight: "40px",
                   /* identical to box height, or 100% */
-                  textAlign: "center",
                   marginTop: "10px"}} > Our Work </h4>
               </strong>
               <div class="displayWork">
@@ -70,7 +68,7 @@ const ButtonGroup = () => {
 
 const Slider = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [slides, setSlides] = useState([
+  const [slides] = useState([
     { month: "January", label: "This is January" },
     { month: "February", label: "This is February" },
     { month: "March", label: "This is March" },

@@ -9,7 +9,7 @@ const Contact = () => {
  const sendEmail = (e) => {
 	e.preventDefault(); // prevents the page from reloading when you hit “Send”
   
-	const { user_name, user_email, message } = form.current.elements;
+	// const { user_name, user_email, message } = form.current.elements;
 	// const templateParams = {
 	//   "from_name": user_name.value,
 	//   "subject": "New Message from " + user_name.value,

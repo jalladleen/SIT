@@ -2,7 +2,7 @@ import React from "react";
 import Background from "./public Events.png";
 import aboutPic from "../components/images/AboutPic.png";
 import './home.css';
-import Contact from "./contact";
+// import Contact from "./contact";
 
 const Home = () => {
   const handleFindOutClick = () => {
@@ -56,7 +56,7 @@ const Home = () => {
           <div class="card">
             <div class="card-block">
               <h4 class="card-title" style={{color:"rgb(14,31,81)"}}>Learn Mircosoft Office Apps</h4>
-              <h6 class="card-subtitle text-muted"></h6>
+              <div class="card-subtitle text-muted"></div>
               <p class="card-text">Learn the basics of the Microsoft suite including :</p>
               <ul>
                                 <li>word</li>
@@ -71,7 +71,7 @@ const Home = () => {
           <div class="card">
             <div class="card-block">
               <h4 class="card-title" style={{color:"rgb(14,31,81)"}}>Setting up a New Phone</h4>
-              <h6 class="card-subtitle text-muted"></h6>
+              <div class="card-subtitle text-muted"></div>
               <p class="card-text"><p>Setting up a new cell phone and <br></br> 
                         learning a new software can be <br></br> 
                         confusing. e can help with that!
@@ -84,7 +84,7 @@ const Home = () => {
           <div class="card">
             <div class="card-block">
               <h4 class="card-title" style={{color:"rgb(14,31,81)"}}>Questions about Security</h4>
-              <h6 class="card-subtitle text-muted"></h6>
+              <div class="card-subtitle text-muted"></div>
               <p class="card-text">Cyber-security can be very scary to <br></br> 
                             learn and we can Help indicate what to <br></br> 
                             worry about what is harmless</p>
@@ -98,7 +98,7 @@ const Home = () => {
           <div class="card">
             <div class="card-block">
               <h4 class="card-title" style={{color:"rgb(14,31,81)"}}>Sending Emails</h4>
-              <h6 class="card-subtitle text-muted"></h6>
+              <div class="card-subtitle text-muted"></div>
               <p class="card-text p-y-1">Learn how to set up a new mail app. filter through inboxes</p>
 
             </div>
@@ -108,7 +108,7 @@ const Home = () => {
           <div class="card">
             <div class="card-block">
               <h4 class="card-title" style={{color:"rgb(14,31,81)"}}>Advice on Purchasing new devices</h4>
-              <h6 class="card-subtitle text-muted"></h6>
+              <div class="card-subtitle text-muted"></div>
               <p class="card-text p-y-1">With the complex technology market.<br></br>
                         knowing what to buy can be stressful.
                         <br></br> 
@@ -121,7 +121,7 @@ const Home = () => {
           <div class="card">
             <div class="card-block">
               <h4 class="card-title" style={{color:"rgb(14,31,81)"}}>Friendly Conversation</h4>
-              <h6 class="card-subtitle text-muted"></h6>
+              <div class="card-subtitle text-muted"></div>
               <p class="card-text p-y-1">Our volunteers are always happy to<br></br> 
                         help and provide
                         a warm attitude at</p>

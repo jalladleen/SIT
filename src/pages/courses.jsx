@@ -58,7 +58,6 @@ const courses = () => {
         <h6 className="route"
         style={{
           color:"#FF3E54",textAlign: "center", fontWeight: 'bold', 
-                  fontWeight: "700",
                   fontSize: "24px",
                   // lineHeight: "20px"
 
