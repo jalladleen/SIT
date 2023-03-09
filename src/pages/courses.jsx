@@ -11,37 +11,39 @@ import getInTouch from "../components/images/getInTouch.png";
 
 const cardList = [
   {
-    title: "Web Design / Developmentr",
+    title: <span style={{fontWeight: 'bold'}}>"Web Design / Developmentr"</span>,
     content:
-      "It is a long established fact that a reader will be distra by the readable content of a page when looking at its layout, when looking at its layout",
+     "It is a long established fact that a reader will be distra by the readable content of a page when looking at its layout, when looking at its layout",
     icon: webDesign,
+    iconStyle: { alignSelf: "center" } // Add this property to center the icon vertically
+
   },
   {
-    title: "UI/UX Design",
+    title: <span style={{fontWeight: 'bold'}}>"UI/UX Design"</span>,
     content:
       "It is a long established fact that a reader will be distra by the readable content of a page when looking at its layout, when looking at its layout",
     icon: UIDesign,
   },
   {
-    title: "Website Migration",
+    title: <span style={{fontWeight: 'bold'}}>"Website Migration"</span>,
     content:
       "It is a long established fact that a reader will be distra by the readable content of a page when looking at its layout, when looking at its layout",
     icon: WebMigration,
   },
   {
-    title: "App Development",
+    title: <span style={{fontWeight: 'bold'}}>"App Development"</span>,
     content:
       "It is a long established fact that a reader will be distra by the readable content of a page when looking at its layout, when looking at its layout",
     icon: AppDev,
   },
   {
-    title: "HubSpot Integration",
+    title: <span style={{fontWeight: 'bold'}}>"HubSpot Integration"</span>,
     content:
       "It is a long established fact that a reader will be distra by the readable content of a page when looking at its layout, when looking at its layout",
     icon: HubSpot,
   },
   {
-    title: "Email Marketing",
+    title: <span style={{fontWeight: 'bold'}}>"Email Marketing"</span>,
     content:
       "It is a long established fact that a reader will be distra by the readable content of a page when looking at its layout, when looking at its layout",
     icon: EmailMarket,
@@ -66,8 +68,6 @@ const Courses = () => {
           color:"#FF3E54",textAlign: "center", fontWeight: 'bold', 
                   fontSize: "24px",
                   // lineHeight: "20px"
-
-
         }}
         
         >\ Courses \</h6>
@@ -76,17 +76,22 @@ const Courses = () => {
         <div className="cards">
           {cardList.map((item, index) => {
             return (
-              <div className="item" key={index}>
-                <img className="h-15 pb-2" src={item.icon} alt={item.title} />
-                <div className="py-4 text-center">
-                  <div className="font-bold text-xl mb-6 text-slate-100">
-                    {item.title}
-                  </div>
-                  <p className="text-slate-100 text-base">{item.content}</p>
-                </div>
+            <div className="item" key={index}>
+              <div className="image-container">
+                <img className="h-15" src={item.icon} alt={item.title} />
               </div>
+              <div className="text-container py-4 text-center">
+                <div className="font-bold text-xl mb-6 text-slate-100">
+                  {item.title}
+                </div>
+                <p className="text-slate-100 text-base">{item.content}</p>
+              </div>
+            </div>
+
+
             );
           })}
+
         </div>
       </div>
       <div className="getInTouch">
