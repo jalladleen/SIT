@@ -1,8 +1,8 @@
 import React from "react";
 import "./about.css";
-import aboutPic from "../components/images/AboutPic.svg";
+import aboutPic from "../components/images/AboutPic.png";
 import helpIcon from "../components/images/helpIcon.svg";
-import getInTouch from "../components/images/getInTouch.svg";
+import getInTouch from "../components/images/getInTouch.png";
 import CEO from "../components/images/LeaderCEO.svg";
 import CTO from "../components/images/LeaderCTO.svg";
 import CFO from "../components/images/LeaderCFO.svg";

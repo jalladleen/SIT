@@ -1,6 +1,6 @@
 import React from "react";
 import Background from "./public Events.png";
-import aboutPic from "../components/images/AboutPic.svg";
+import aboutPic from "../components/images/AboutPic.png";
 import './home.css';
 import Contact from "./contact";
 

@@ -17,10 +17,20 @@ const ButtonGroup = () => {
   
   
           <div class = "work">
+              <b><h6 style ={{color:"#FF3E54",textAlign: "center", paddingTop:"40px", fontWeight: 'bold', 
+                  fontWeight: "700",
+                  fontSize: "24px",
+                  lineHeight: "20px"
             
-              <b><h6 style ={{color:"#FF3E54",textAlign: "center", paddingTop:"40px", fontWeight: 'bold'}} >\Public Events\</h6></b>
+            }} >\ Public Events \</h6></b>
               <strong>
-              <h4 style={{color: "#0E1F51", textAlign:"center", font: "Raleway"}} > Our Work </h4>
+              <h4 style={{color: "#0E1F51", textAlign:"center", font: "Raleway", 
+                  fontWeight: "700",
+                  fontSize: "40px",
+                  lineHeight: "40px",
+                  /* identical to box height, or 100% */
+                  textAlign: "center",
+                  marginTop: "10px"}} > Our Work </h4>
               </strong>
               <div class="displayWork">
               <Slider />  

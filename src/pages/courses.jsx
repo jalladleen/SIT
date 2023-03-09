@@ -6,7 +6,7 @@ import WebMigration from "../components/images/WebMigration.svg";
 import AppDev from "../components/images/AppDev.svg";
 import HubSpot from "../components/images/HubSpot.svg";
 import EmailMarket from "../components/images/EmailMarket.svg";
-import getInTouch from "../components/images/getInTouch.svg";
+import getInTouch from "../components/images/getInTouch.png";
 
 const cardList = [
   {
@@ -55,8 +55,18 @@ const courses = () => {
       </div>
 
       <div>
-        <div className="route">\ Courses \</div>
-        <div className="learn">Learn!</div>
+        <h6 className="route"
+        style={{
+          color:"#FF3E54",textAlign: "center", fontWeight: 'bold', 
+                  fontWeight: "700",
+                  fontSize: "24px",
+                  // lineHeight: "20px"
+
+
+        }}
+        
+        >\ Courses \</h6>
+        <h4 className="learn"  style={{color: "#0E1F51", textAlign:"center", font: "Raleway"}}>Learn!</h4>
 
         <div className="cards">
           {cardList.map((item, index) => {

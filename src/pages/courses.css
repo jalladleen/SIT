@@ -42,7 +42,7 @@
 
 .route {
     color: #FF3E54;
-    font-family: 'Raleway';
+    /* font-family: 'Raleway'; */
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -50,10 +50,11 @@
     /* identical to box height, or 83% */
     text-align: center;
     margin-top: 50px;
+    font-weight: 'bold';
 }
 
 .learn {
-    font-family: 'Raleway';
+    /* font-family: 'Raleway'; */
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
