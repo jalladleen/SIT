@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./courses.css";
 import webDesign from "../components/images/webDesign.svg";
 import UIDesign from "../components/images/UIDesign.svg";
@@ -7,6 +7,7 @@ import AppDev from "../components/images/AppDev.svg";
 import HubSpot from "../components/images/HubSpot.svg";
 import EmailMarket from "../components/images/EmailMarket.svg";
 import getInTouch from "../components/images/getInTouch.png";
+
 
 const cardList = [
   {
@@ -46,7 +47,12 @@ const cardList = [
     icon: EmailMarket,
   },
 ];
-const courses = () => {
+const Courses = () => {
+  
+  useEffect(() => {
+    document.title = "SIT | Courses";
+  }, []);
+
   return (
     <div>
       <div className="bannerCourses">
@@ -97,4 +103,4 @@ const courses = () => {
   );
 };
 
-export default courses;
+export default Courses;

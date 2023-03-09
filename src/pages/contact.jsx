@@ -1,10 +1,14 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect} from 'react';
 import emailjs from 'emailjs-com';
 import "./contact.css";
- 
+
 const Contact = () => {
  const form = useRef();
  const [isMessageVisible, setIsMessageVisible] = useState(false);
+
+ useEffect(() => {
+  document.title = "SIT | Contact";
+}, []);
  
  const sendEmail = (e) => {
 	e.preventDefault(); // prevents the page from reloading when you hit “Send”

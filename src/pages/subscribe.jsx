@@ -1,6 +1,7 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import emailjs from 'emailjs-com';
 import "./subscribe.css";
+
 
  
 const Subscribe = () => {
@@ -9,6 +10,8 @@ const Subscribe = () => {
  
  const sendEmail = (e) => {
 	e.preventDefault(); // prevents the page from reloading when you hit “Send”
+
+  
   
 	// const { user_name, user_email, message } = form.current.elements;
 	// const templateParams = {
@@ -27,6 +30,9 @@ const Subscribe = () => {
 	  });
   };
   
+  useEffect(() => {
+    document.title = "SIT | Subscribe";
+  }, []);
  
  return (
    <div className="form-container">

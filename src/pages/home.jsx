@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Background from "./public Events.png";
 import aboutPic from "../components/images/AboutPic.png";
 import './home.css';
@@ -9,6 +9,10 @@ const Home = () => {
     const offeringsSection = document.getElementById("offerings-section");
     offeringsSection.scrollIntoView({ behavior: "smooth" });
   };
+
+  useEffect(() => {
+    document.title = "SIT | Home";
+  }, []);
 
   return (
     <div>

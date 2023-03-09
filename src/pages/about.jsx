@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./about.css";
 import aboutPic from "../components/images/AboutPic.png";
 import helpIcon from "../components/images/helpIcon.svg";
@@ -78,7 +78,12 @@ const LeadersList = [
 		icon: COO,
 	  },
   ];
-const about = () => {
+const About = () => {
+
+	useEffect(() => {
+		document.title = "SIT | About";
+	  }, []);
+
   return (
     <div>
       <div className="bannerAbout">
@@ -151,4 +156,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;

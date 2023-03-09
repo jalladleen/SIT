@@ -1,6 +1,12 @@
 
-import React from "react";
+import React, {useEffect} from "react";
+
+
+
 const Register = () => {
+	useEffect(() => {
+		document.title = "SIT | Register";
+	  }, []);
 return (
 	<div>
 		<br /><br />

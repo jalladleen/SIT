@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./publicEvents.css";
+
+
 
 const ButtonGroup = () => {
     const handleSubmit = (event) => {
@@ -7,6 +9,10 @@ const ButtonGroup = () => {
 		//console.log("button has been pressed");
         window.location = "/contact";
     }
+
+    useEffect(() => {
+      document.title = "SIT | Public Events";
+    }, []);
 
     return (  
       <div>
