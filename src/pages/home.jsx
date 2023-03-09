@@ -138,7 +138,7 @@ const Home = () => {
 
    
 
-    <div className="middle">
+    <div className="middle" >
   <img style={{ float: "left", marginLeft: "30px"}} src={aboutPic} alt="about"></img>
   <div style={{ margin: "30px 30px 30px 40px", padding: "20px", backgroundColor: "#f1f1f1" }}>
     <div className="AboutUs">\ Partnerships \</div>

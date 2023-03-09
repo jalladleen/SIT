@@ -81,7 +81,7 @@ const Footer = () => {
                         </div>
 						{/* <button onClick={handleSubmit} type="submit" class="btn btn-primary subscribe-btn" style={{ background: '#FF3E54', borderBlockColor:'#FF3E54', textAlign: 'right'  }}> */}
             <Link to="/subscribe">
-              <button class="btn btn-primary subscribe-btn" style={{ background: '#FF3E54', borderBlockColor:'#FF3E54', textAlign: 'right' }}>Subscribe</button></Link>
+              <button class="btn btn-primary subscribe-btn" style={{ background: '#FF3E54', borderBlockColor:'#FF3E54', textAlign: 'center' }}>Subscribe</button></Link>
 							{/* Subscribe
 							</button> */}
                       </form>
