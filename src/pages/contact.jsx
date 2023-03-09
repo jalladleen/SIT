@@ -47,7 +47,7 @@ const Contact = () => {
         >\ Get In Touch \</h6>
         <h4 className="learn" style={{ color: "#0E1F51", textAlign: "center", font: "Raleway" }}>Hey! Let's Talk</h4>
         <div className='container' style={{ display: "flex", width: "1300px" }}>
-          <div className="form-container" style={{ width: "1000px", color: "#0E1F51" }}>
+          <div className="form-container" >
             {isMessageVisible ?
               <div className="success-message">
                 <p>Message sent!</p>
@@ -55,7 +55,7 @@ const Contact = () => {
               </div> :
               null
             }
-            <form ref={form} onSubmit={sendEmail}>
+            <form ref={form} onSubmit={sendEmail} >
               <input type="text" name="user_fname" placeholder="First Name" style={{ background: "#f7f7f7" }} required />
 
               <input type="text" name="user_lname" placeHolder="Last Name" style={{ background: "#f7f7f7" }} required />
@@ -75,17 +75,13 @@ const Contact = () => {
               <h3>send Email</h3>
               <h6>enter email here</h6>
               <br></br>
-              <br></br>
-              <br></br>
-              <br></br>
+
               <h3>Follow us</h3>
 
               <div className="socials">
                 <button style={{ color: "white", backgroundColor: "#ff304d" }} type="submit"></button>
                 <button style={{ color: "white", backgroundColor: "#ff304d" }} type="submit"></button>
                 <button style={{ color: "white", backgroundColor: "#ff304d" }} type="submit"></button>
-
-
               </div>
 
             </div>
