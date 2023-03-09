@@ -74,6 +74,8 @@
 
 .container {
     max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .subscribe-btn {
@@ -82,4 +84,55 @@
     align-items: right;
     align-self: right;
     align-content: right;
+}
+
+
+/* make footer responsive */
+
+
+/* Small screens (up to 576px) */
+
+@media (max-width: 576px) {
+    .footer-title {
+        font-size: 18px;
+    }
+    .footer-social-links a {
+        margin-right: 5px;
+        font-size: 14px;
+    }
+    .subscribe-btn {
+        width: 80px;
+    }
+}
+
+
+/* Medium screens (up to 768px) */
+
+@media (max-width: 768px) {
+    .footer-title {
+        font-size: 20px;
+    }
+    .footer-social-links a {
+        margin-right: 8px;
+        font-size: 16px;
+    }
+}
+
+
+/* Large screens (up to 992px) */
+
+@media (max-width: 992px) {
+    .footer-social-links a {
+        margin-right: 12px;
+        font-size: 18px;
+    }
+}
+
+
+/* Extra large screens (more than 1200px) */
+
+@media (min-width: 1200px) {
+    .subscribe-btn {
+        width: 120px;
+    }
 }
