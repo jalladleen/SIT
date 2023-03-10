@@ -75,7 +75,7 @@ const ButtonGroup = () => {
 const Slider = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [slides] = useState([
-    { month: "January", label: "This is January" },
+    { month: "January", label: "Stay tuned for upcoming events and exciting announcements!" },
     { month: "February", label: "This is February" },
     { month: "March", label: "This is March" },
     { month: "April", label: "This is April" },
@@ -125,12 +125,28 @@ const Slider = () => {
             {slide.label || slide.month}
           </div>
         ))}
-        <div className="prev-button" onClick={handlePrevClick}>
+        {/* <div className="prev-button" onClick={handlePrevClick}>
           {"<"}
         </div>
         <div className="next-button" onClick={handleNextClick}>
           {">"}
-        </div>
+        </div> */}
+
+
+
+<button class="prev-button" onClick={handlePrevClick}>
+  <svg class="arrow-icon" viewBox="0 0 24 24">
+    <path d="M8 5v14l11-7z" transform="rotate(180, 12, 12)"/>
+  </svg>
+</button>
+
+        <button class="next-button" onClick={handleNextClick}>
+          <svg class="arrow-icon" viewBox="0 0 24 24">
+          <path d="M8 5v14l11-7z"/>
+
+          </svg>
+        </button>
+ 
       </div>
     </div>
   );

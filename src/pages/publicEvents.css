@@ -1,6 +1,6 @@
 .slider-container {
     width: 100%;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
     box-sizing: border-box;
@@ -25,11 +25,11 @@
     margin: 0 6px;
     font-size: 14px;
     font-weight: bold;
-    color: #333;
+    color: #0e1f51;
     text-transform: uppercase;
     letter-spacing: 1px;
     background-color: transparent;
-    border: 2px solid #333;
+    border: 2px solid #0e1f51;
     border-radius: 4px;
     cursor: pointer;
     transition: all 0.2s ease;
@@ -38,15 +38,17 @@
 .slider-button:hover,
 .slider-button.active {
     color: #fff;
-    background-color: #333;
+    background-color: #0e1f51;
 }
 
 .slider {
     position: relative;
-    height: 300px;
+    height: 400px;
     display: flex;
     align-items: center;
     overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: 20px;
 }
 
 .slide {
@@ -58,13 +60,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 48px;
+    font-size: 25px;
     font-weight: bold;
-    color: #fff;
-    background-color: #333;
+    background-color: #ff3e54;
     opacity: 0;
     visibility: hidden;
     transition: all 0.5s ease;
+    width: 100%;
 }
 
 .slide.active {
@@ -77,18 +79,29 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 48px;
-    color: #333;
+    font-size: 0;
+    /* hide any text content */
+    color: #ff3e54;
     cursor: pointer;
     z-index: 10;
     opacity: 0.5;
     transition: all 0.2s ease;
+    border-radius: 50%;
+    background-color: #fff;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 0;
 }
 
 .prev-button:hover,
 .next-button:hover {
     color: #fff;
     opacity: 1;
+    background-color: #0e1f51;
 }
 
 .prev-button {
@@ -97,6 +110,21 @@
 
 .next-button {
     right: 20px;
+}
+
+
+/* Define the SVG arrow icon */
+
+.arrow-icon {
+    fill: #ff3e54;
+    height: 30px;
+    width: 30px;
+    transition: all 0.2s ease;
+}
+
+.prev-button:hover .arrow-icon,
+.next-button:hover .arrow-icon {
+    fill: #fff;
 }
 
 
@@ -111,7 +139,7 @@
     background-image: url("public Events.png");
     padding: 10px;
     border-radius: 10px;
-    margin-top: -400px;
+    margin-top: -250px;
 }
 
 .work {
