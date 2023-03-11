@@ -13,15 +13,13 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault(); // prevents the page from reloading when you hit “Send”
 
-    // const { user_name, user_email, message } = form.current.elements;
-    // const templateParams = {
-    //   "from_name": user_name.value,
-    //   "subject": "New Message from " + user_name.value,
-    //   "message_html": message.value,
-    //   "reply_to": user_email.value // use user_email instead of your email
-    // };
 
-    emailjs.sendForm('service_kkjoutp', 'template_umqkdbm', form.current, 'glmdBWlmeEKsfodH4')
+    // Leen's Info (Team lead)
+    // emailjs.sendForm('service_kkjoutp', 'template_umqkdbm', form.current, 'glmdBWlmeEKsfodH4')
+
+    //Client info to be used
+    emailjs.sendForm('service_vukme39', 'template_4o0macg', form.current, 'W8jFq11Su6rJ4GRtl')
+
       .then(() => {
         setIsMessageVisible(true);
         form.current.reset();
