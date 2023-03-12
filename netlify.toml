@@ -1,0 +1,9 @@
+[build]
+  command = "CI='' npm run build"
+  publish = "/build"
+  base ="/"
+
+[[redirects]]
+  from = "/*"
+  to = "/pages/home.jsx"
+  status = 200
