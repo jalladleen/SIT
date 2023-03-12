@@ -21,11 +21,13 @@ function App() {
           <Routes>
             <Route path="/subscribe" element={<Subscribe />} /> 
             <Route element={<About></About>} path="/about" />
-                        <Route element={<Home></Home>} path="/" />
+                        <Route element={<Home></Home>} path="/home" />
                         <Route element={<Contact></Contact>} path="/contact" />
                         <Route element={<Courses></Courses>} path="/courses" />
                         <Route element={<Register></Register>} path="/register" />
                         <Route element={<PublicEvents></PublicEvents>} path="/publicEvents" />
+                        <Route element={<Home></Home>} path="/" />
+
           </Routes>
           <Footer />
         </div>
