@@ -89,7 +89,6 @@ const Contact = () => {
                   </a>
                 </button>
 
-                
                 <button style={{ color: "white", backgroundColor: "#ff304d" }} type="submit">
                   <a href="https://www.instagram.com/" className="instagram social"  style={{color: "white"}}>
                         <FontAwesomeIcon icon={faInstagram} size="2x" />
