@@ -5,12 +5,12 @@ import NavbarComp from "./components/navbar";
 import Footer from "./components/footer";
 import Subscribe from "./pages/subscribe"; // import the Subscribe component
 
-import Courses from '../pages/courses';
-import Home from '../pages/home';
-import Contact from '../pages/contact';
-import About from '../pages/about';
-import Register from '../pages/register';
-import PublicEvents from '../pages/publicEvents';
+import Courses from './pages/courses';
+import Home from './pages/home';
+import Contact from './pages/contact';
+import About from './pages/about';
+import Register from './pages/register';
+import PublicEvents from './pages/publicEvents';
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
           <Routes>
             <Route path="/subscribe" element={<Subscribe />} /> 
             <Route element={<About></About>} path="/about" />
-                        <Route element={<Home></Home>} path="/home" />
+                        <Route element={<Home></Home>} path="/" />
                         <Route element={<Contact></Contact>} path="/contact" />
                         <Route element={<Courses></Courses>} path="/courses" />
                         <Route element={<Register></Register>} path="/register" />
